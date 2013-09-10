@@ -195,6 +195,7 @@
 	<map context="InfobarActions">
 		<key id="KEY_FAVORITES" mapto="openBouquetList" flags="m" />
 		<key id="KEY_PVR" mapto="showMovies" flags="m" />
+		<key id="KEY_LIST" mapto="showMovies" flags="m" />
 		<key id="KEY_RADIO" mapto="showRadio" flags="m" />
 		<key id="KEY_TV" mapto="showTv" flags="m" />
 		<key id="KEY_PROG1" mapto="openBouquetList" flags="m" />
