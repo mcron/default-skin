@@ -496,19 +496,45 @@
 		<convert type="RdsInfo">RadioText</convert>
 	      </widget>
   </screen>	
-<!-- About screen -->
-	<screen name="About" position="0,0" size="1280,720" title="About" flags="wfNoBorder">
+  <!--About-->
+  <screen name="AboutOE" position="center,center" size=" 840,605" title="About" flags="wfNoBorder">
+    <widget source="Title" render="Label" backgroundColor="background" font="Regular; 35" position="427,10" size="400,55" transparent="1" halign="right" valign="center" zPosition="1" foregroundColor="white" />
+    <widget source="global.CurrentTime" render="Label" position=" 20,20" size=" 80,25" font="Regular;23" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="110,20" size="140,25" font="Regular;23" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget source="lab1" render="Label" position="29,86" size="369,35" font="Regular;30" transparent="1" zPosition="2" />
+    <widget source="lab2" render="Label" position="29,142" size="370,25" font="Regular;19" transparent="1" zPosition="2" />
+    <widget source="lab3" render="Label" position="30,187" size="369,25" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="OPEN SOURCE" position="410,400" size="353,28" font="Regular;22" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/mcron" position="410,440" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/oe-alliance" position="409,481" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
+    <widget name="AboutScrollLabel" position="27,253" size="369,310" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand" />
+    <ePixmap position="401,100" size="420,241" pixmap="DEFAULT.HD/openswf_info.png" transparent="1" />
+    <eLabel text="Git changes" position="70,571" size="353,28" font="Regular;20" transparent="1" zPosition="1" />
+    <ePixmap position="31,572" size="70,30" pixmap="DEFAULT.HD/buttons/key_info.png" alphatest="blend" />
+  </screen>
+	<screen name="SystemDevicesInfo" position="0,0" title="Devices Information" size="1280,720" flags="wfNoBorder">
 		<panel name="FullscreenPanel" />
-		<eLabel text="About" position="60,40" size="300,45" font="Regular;32" halign="center" backgroundColor="background" transparent="1"/>
+		<eLabel text="Devices Information" position="60,40" size="300,45" font="Regular;32" halign="center" backgroundColor="background" transparent="1"/>
 		<widget name="AboutScrollLabel" position="850,112" size="458,400" font="Regular;24" backgroundColor="background" zPosition="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="135,560" size="120,120" zPosition="2" pixmap="DEFAULT.HD/icons/info_about.png" transparent="1" alphatest="blend" />
 	</screen>
-	<screen name="SystemMemoryInfo" position="0,0" title="Memory Information" size="1280,720" flags="wfNoBorder">
-		<eLabel text="Memory Information" position="60,40" size="300,45" font="Regular;32" halign="center" backgroundColor="background" transparent="1"/>
-		<widget name="AboutScrollLabel" position="850,112" size="458,400" font="Regular;24" backgroundColor="background" zPosition="1" scrollbarMode="showOnDemand"/>
-		<ePixmap position="135,560" size="120,120" zPosition="2" pixmap="DEFAULT.HD/icons/info_about.png" transparent="1" alphatest="blend" />
-	</screen>
-	
+  </screen>
+  <screen name="SystemMemoryInfo" position="center,center" size=" 840,605" title="SystemInfo" flags="wfNoBorder">
+    <widget source="Title" render="Label" backgroundColor="white" font="Regular; 35" position="426,10" size="400,55" transparent="1" halign="right" valign="center" zPosition="1" foregroundColor="black" />
+    <widget source="global.CurrentTime" render="Label" position=" 20,20" size=" 80,25" font="Regular;23" foregroundColor="black" backgroundColor="white" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="110,20" size="140,25" font="Regular;23" foregroundColor="blue" backgroundColor="white" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget source="lab1" render="Label" position="31,88" size="458,35" font="Regular;30" transparent="0" zPosition="2" />
+    <widget source="lab2" render="Label" position="32,133" size="458,25" font="Regular;19" transparent="0" zPosition="2" />
+    <widget name="AboutScrollLabel" position="32,176" size="458,376" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand" />
+  </screen>
 	<screen name="SystemNetworkInfo" position="0,0" title="Network Information" size="1280,720" flags="wfNoBorder">
 		<panel name="FullscreenPanel" />
 		<eLabel text="Network Information" position="60,40" size="300,45" font="Regular;32" halign="center" backgroundColor="background" transparent="1"/>
@@ -532,13 +558,22 @@
 		<widget source="Statustext" render="Label" position="850,607" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="0"/>
 		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="960,610" zPosition="10" size="15,16" transparent="0" alphatest="on"/>
 	</screen>
-	
-	<screen name="SystemDevicesInfo" position="0,0" title="Devices Information" size="1280,720" flags="wfNoBorder">
-		<panel name="FullscreenPanel" />
-		<eLabel text="Devices Information" position="60,40" size="300,45" font="Regular;32" halign="center" backgroundColor="background" transparent="1"/>
-		<widget name="AboutScrollLabel" position="850,112" size="458,400" font="Regular;24" backgroundColor="background" zPosition="1" scrollbarMode="showOnDemand"/>
-		<ePixmap position="135,560" size="120,120" zPosition="2" pixmap="DEFAULT.HD/icons/info_about.png" transparent="1" alphatest="blend" />
-	</screen>
+  <screen name="SoftwareUpdateChanges" position="center,center" size="840,605" title="SoftwareUpdateChanges" flags="wfNoBorder" backgroundColor="transpBlack">
+    <widget source="Title" render="Label" backgroundColor="background" font="Regular; 35" position="384,11" size="443,55" transparent="1" halign="right" valign="center" zPosition="1" foregroundColor="white" />
+    <widget source="global.CurrentTime" render="Label" position=" 20,20" size=" 80,25" font="Regular;23" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="110,20" size="140,25" font="Regular;23" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget name="text" position="20,82" size="800,473" font="Regular;21" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="DEFAULT.HD/buttons/red.png" position=" 30,570" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="DEFAULT.HD/buttons/green.png" position="290,570" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="DEFAULT.HD/buttons/yellow.png" position="550,570" size="35,27" alphatest="blend" />
+    <widget name="key_red" position=" 80,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget name="key_green" position="340,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget name="key_yellow" position="600,573" size="200,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+  </screen>
 <!-- Bouquet selector -->
 	<screen name="BouquetSelector" position="210,160" size="300,240" title="Choose bouquet">
 		<widget name="menu" position="10,10" size="290,225" scrollbarMode="showOnDemand" />
