@@ -522,19 +522,11 @@
 		<widget name="AboutScrollLabel" position="850,112" size="458,400" font="Regular;24" backgroundColor="background" zPosition="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="135,560" size="120,120" zPosition="2" pixmap="DEFAULT.HD/icons/info_about.png" transparent="1" alphatest="blend" />
 	</screen>
-  </screen>
-  <screen name="SystemMemoryInfo" position="center,center" size=" 840,605" title="SystemInfo" flags="wfNoBorder">
-    <widget source="Title" render="Label" backgroundColor="white" font="Regular; 35" position="426,10" size="400,55" transparent="1" halign="right" valign="center" zPosition="1" foregroundColor="black" />
-    <widget source="global.CurrentTime" render="Label" position=" 20,20" size=" 80,25" font="Regular;23" foregroundColor="black" backgroundColor="white" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="110,20" size="140,25" font="Regular;23" foregroundColor="blue" backgroundColor="white" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
-    </widget>
-    <widget source="lab1" render="Label" position="31,88" size="458,35" font="Regular;30" transparent="0" zPosition="2" />
-    <widget source="lab2" render="Label" position="32,133" size="458,25" font="Regular;19" transparent="0" zPosition="2" />
-    <widget name="AboutScrollLabel" position="32,176" size="458,376" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand" />
-  </screen>
+	<screen name="SystemMemoryInfo" position="0,0" title="Memory Information" size="1280,720" flags="wfNoBorder">
+		<eLabel text="Memory Information" position="60,40" size="300,45" font="Regular;32" halign="center" backgroundColor="background" transparent="1"/>
+		<widget name="AboutScrollLabel" position="850,112" size="458,400" font="Regular;24" backgroundColor="background" zPosition="1" scrollbarMode="showOnDemand"/>
+		<ePixmap position="135,560" size="120,120" zPosition="2" pixmap="DEFAULT.HD/icons/info_about.png" transparent="1" alphatest="blend" />
+	</screen>
 	<screen name="SystemNetworkInfo" position="0,0" title="Network Information" size="1280,720" flags="wfNoBorder">
 		<panel name="FullscreenPanel" />
 		<eLabel text="Network Information" position="60,40" size="300,45" font="Regular;32" halign="center" backgroundColor="background" transparent="1"/>
