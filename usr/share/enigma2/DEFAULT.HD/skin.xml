@@ -607,7 +607,7 @@
 		</widget>
 		<eLabel text=">>" position="80,510" zPosition="4" size="84,24" font="Regular;20" valign="top" transparent="1" foregroundColor="yellow" backgroundColor="background" />
 		  <!--<eLabel text="next:" position="110,510" zPosition="4" size="84,24" font="Regular;20" valign="top" transparent="1" foregroundColor="lightgrey" backgroundColor="background" />-->
-		<widget source="ServiceEvent" render="Label" position="110,510" size="130,24" valign="top" font="Regular;20" transparent="1" foregroundColor="lightgrey" backgroundColor="background">
+		<widget source="ServiceEvent" render="Label" position="110,510" size="370,24" valign="top" font="Regular;20" transparent="1" foregroundColor="lightgrey" backgroundColor="background">
 		    <convert type="EventName">NameNext</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="80,545" size="350,73" font="Regular;20" transparent="1" foregroundColor="yellow" backgroundColor="background" >
