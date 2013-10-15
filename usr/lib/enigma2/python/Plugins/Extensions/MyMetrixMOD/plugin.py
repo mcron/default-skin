@@ -121,7 +121,7 @@ config.plugins.MyMetrixMOD.InfobarECMInfo = ConfigSelection(default="infobar-ecm
 				("infobar-ecminfo", _("On")),
 				("infobar-ecminfo-none", _("Off"))
 				])
-config.plugins.MyMetrixMOD.InfobarSatPosition = ConfigSelection(default="infobar-satposition-none", choices = [
+config.plugins.MyMetrixMOD.InfobarSatPosition = ConfigSelection(default="infobar-satposition", choices = [
 				("infobar-satposition", _("On")),
 				("infobar-satposition-none", _("Off"))
 				])
