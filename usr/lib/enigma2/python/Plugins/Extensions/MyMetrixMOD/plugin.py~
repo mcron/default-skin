@@ -67,8 +67,8 @@ config.plugins.MyMetrixMOD = ConfigSubsection()
 config.plugins.MetrixWeather = ConfigSubsection()
 
 				#General
-config.plugins.MyMetrixMOD.Image = ConfigSelection(default="main-custom-openatv", choices = [
-				("main-custom-openatv", _("openATV")),
+config.plugins.MyMetrixMOD.Image = ConfigSelection(default="main-custom-openswf", choices = [
+				("main-custom-openswf", _("openSWF")),
 				("main-custom-openmips", _("openMips"))
 				])
 config.plugins.MyMetrixMOD.SkinColor = ConfigSelection(default="#00149baf", choices = [

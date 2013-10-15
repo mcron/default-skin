@@ -109,7 +109,7 @@ config.plugins.MyMetrixMOD.InfobarResolutionInfo = ConfigSelection(default="info
 				("infobar-resolutioninfo", _("On")),
 				("infobar-resolutioninfo-none", _("Off"))
 				])
-config.plugins.MyMetrixMOD.InfobarCryptInfo = ConfigSelection(default="infobar-cryptinfo-none", choices = [
+config.plugins.MyMetrixMOD.InfobarCryptInfo = ConfigSelection(default="infobar-cryptinfo", choices = [
 				("infobar-cryptinfo", _("On")),
 				("infobar-cryptinfo-none", _("Off"))
 				])
@@ -117,7 +117,7 @@ config.plugins.MyMetrixMOD.InfobarShowChannelname = ConfigSelection(default="inf
 				("infobar-channelname", _("On")),
 				("infobar-channelname-none", _("Off"))
 				])
-config.plugins.MyMetrixMOD.InfobarECMInfo = ConfigSelection(default="infobar-ecminfo-none", choices = [
+config.plugins.MyMetrixMOD.InfobarECMInfo = ConfigSelection(default="infobar-ecminfo", choices = [
 				("infobar-ecminfo", _("On")),
 				("infobar-ecminfo-none", _("Off"))
 				])
@@ -125,11 +125,11 @@ config.plugins.MyMetrixMOD.InfobarSatPosition = ConfigSelection(default="infobar
 				("infobar-satposition", _("On")),
 				("infobar-satposition-none", _("Off"))
 				])
-config.plugins.MyMetrixMOD.InfobarSNR = ConfigSelection(default="infobar-snr-none", choices = [
+config.plugins.MyMetrixMOD.InfobarSNR = ConfigSelection(default="infobar-snr", choices = [
 				("infobar-snr", _("On")),
 				("infobar-snr-none", _("Off"))
 				])
-config.plugins.MyMetrixMOD.InfobarTunerInfo = ConfigSelection(default="infobar-tunerinfo-none", choices = [
+config.plugins.MyMetrixMOD.InfobarTunerInfo = ConfigSelection(default="infobar-tunerinfo", choices = [
 				("infobar-tunerinfo-none", _("Off")),
 				("infobar-tunerinfo-ab", _("2 Tuner")),
 				("infobar-tunerinfo-abc", _("3 Tuner")),
