@@ -1937,8 +1937,10 @@
     <eLabel text="https://github.com/oe-alliance" position="409,481" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="27,253" size="369,310" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="401,100" size="420,241" pixmap="DEFAULT.HD/openswf_info.png" transparent="1" />
-    <eLabel text="Git changes" position="70,571" size="353,28" font="Regular;20" transparent="1" zPosition="1" />
-    <ePixmap position="31,572" size="70,30" pixmap="DEFAULT.HD/buttons/key_info.png" alphatest="blend" />
+    <eLabel text="Git changes" position="70,571" size="200,26" font="Regular;22" transparent="1" zPosition="1" />
+    <ePixmap position="25,572" size="70,30" pixmap="DEFAULT.HD/buttons/key_info.png" alphatest="blend" />
+ <ePixmap alphatest="blend" pixmap="om-black/buttons/green.png" position="31,545" size="35,27" />
+    <eLabel backgroundColor="grey" font="Regular;22" foregroundColor="white" halign="left" position="70,545" size="200,26" text="Translation" transparent="1" zPosition="1" />
   </screen>
   <screen name="BouquetSelector" position="331,center" size=" 620,470" title="Choose bouquet" backgroundColor="un20000000">
     <widget enableWrapAround="1" itemHeight="30" name="menu" position="10,10" scrollbarMode="showOnDemand" selectionPixmap="om-black/menu/sel700x30.png" size="600,450" transparent="1" />

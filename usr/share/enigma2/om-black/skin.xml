@@ -2632,8 +2632,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="background" name="list" position="30,90" scrollbarMode="showOnDemand" selectionPixmap="om-black/menu/sel800x50.png" size="780,450" transparent="1" />
     <ePixmap alphatest="blend" pixmap="om-black/buttons/red.png" position=" 30,570" size="35,27" />
     <ePixmap alphatest="blend" pixmap="om-black/buttons/green.png" position="390,570" size="35,27" />
-    <widget backgroundColor="black" font="Regular;22" foregroundColor="white" halign="left" name="red" position=" 80,571" size="300,26" transparent="1" zPosition="1" />
-    <widget backgroundColor="black" font="Regular;22" foregroundColor="white" halign="left" name="green" position="440,571" size="300,26" transparent="1" zPosition="1" />
+    <widget name="key_red" position="20,570" size="230,20" zPosition="11" font="Regular;20" valign="top" halign="center" transparent="1"/>
+    <widget name="key_green" position="345,570" size="230,20" zPosition="11" font="Regular;20" valign="top" halign="center" transparent="1"/>
+    <widget backgroundColor="black" font="Regular;20" foregroundColor="white" halign="left" name="red" position=" 80,571" size="300,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;20" foregroundColor="white" halign="left" name="green" position="440,571" size="300,26" transparent="1" zPosition="1" />
   </screen>
   <screen flags="wfNoBorder" name="PluginDownloadBrowser" position="center,center" size=" 840,605" title="Downloadable plugins">
     <ePixmap pixmap="om-black/menu/setupbg.png" position="0,0" size="1100,605" zPosition="-10" />
@@ -5483,8 +5485,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="om-black/buttons/red.png" position=" 30,570" size="35,27" alphatest="blend" />
     <ePixmap pixmap="om-black/buttons/green.png" position="290,570" size="35,27" alphatest="blend" />
     <ePixmap pixmap="om-black/buttons/yellow.png" position="550,570" size="35,27" alphatest="blend" />
-    <widget name="key_red" position=" 80,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget name="key_green" position="340,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget name="key_yellow" position="600,573" size="200,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget name="key_red" position=" 60,568" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget name="key_green" position="320,568" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget name="key_yellow" position="580,568" size="200,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
   </screen>
 </skin>
