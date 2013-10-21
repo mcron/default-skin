@@ -5489,4 +5489,32 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="key_green" position="320,568" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget name="key_yellow" position="580,568" size="200,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="background" transparent="1" />
   </screen>
+<screen name="RestorePlugins" position="center,center" size="680,420" backgroundColor="background" flags="wfNoBorder">
+		<ePixmap pixmap="om-black/menu/setupbg.png" position="0,0" size="680,420" zPosition="-10" />
+		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="680,420" backgroundColor="background" transparent="0" />
+		<eLabel text="Restore Plugins" position="70,47" size="800,43" font="Regular;20" backgroundColor="background" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="background" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="background" transparent="1">
+			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+		</widget>
+		<widget enableWrapAround="1" position="13,123" render="Listbox" scrollbarMode="showNever" selectionPixmap="om-black/menu/menusel.png" size="680,400" source="menu" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (50, 3), size = (650, 23), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryPixmapAlphaTest(pos = (5, 1), size = (24, 24), png = 1),
+					],
+					"fonts": [gFont("Regular", 19), gFont("Regular", 16)],
+					"itemHeight": 30
+				}
+		</convert>
+		</widget>
+		<ePixmap pixmap="om-black/buttons/red.png" position=" 70,390" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="om-black/buttons/green.png" position="360,390" size="30,40" alphatest="blend" />
+		<eLabel text="cancel" position="100,390" size="200,26" font="Regular;22" transparent="1" zPosition="1" />
+		<eLabel text="install" position="385,390" size="200,26" font="Regular;22" transparent="1" zPosition="1" />
+		<widget name="key_red" position="105,300" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
+		<widget name="key_green" position="395,300" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" />
+	</screen>
 </skin>
